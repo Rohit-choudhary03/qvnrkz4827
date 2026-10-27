@@ -4,7 +4,7 @@ A React + Python dashboard for reviewing Elexon national wind forecasts availabl
 
 **Included:** full source, real Elexon January 2026 snapshot, prebuilt frontend in the download ZIP, Python API, automated tests, Docker configuration, Heroku deployment configuration, and demo guidance. No API key is needed to run the included snapshot.
 
-**Submission status:** this is a locally tested project. A public GitHub repository, live Heroku URL, and unlisted YouTube video still need to be created in your accounts. Do not submit before adding these links and checking them in incognito mode.
+**Submission status:** the [public repository](https://github.com/Rohit-choudhary03/qvnrkz4827) and [live Vercel app](https://windscope-alpha.vercel.app) are available. The unlisted YouTube demo still needs to be recorded and linked. Verify all submission links in incognito mode before submitting.
 
 ## Start on Windows 11
 
@@ -171,10 +171,10 @@ Tests cover cutoff inclusivity, prevention of look-ahead, zero versus missing da
 
 ## Deployment and submission links
 
-Follow [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for a single-app Heroku deployment. This meets the brief's **Vercel or Heroku** requirement without splitting frontend/backend hosting.
+The app is deployed on [Vercel](https://windscope-alpha.vercel.app), serving React and the Python API under one domain. See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for Vercel configuration and the Heroku alternative. Docker is available for local execution and CI builds.
 
 - Public anonymous-name GitHub repo: https://github.com/Rohit-choudhary03/qvnrkz4827
-- Live Heroku app: **NOT DEPLOYED — add your URL**
+- Live Vercel app: https://windscope-alpha.vercel.app
 - Unlisted YouTube demo: **NOT RECORDED — add your URL**
 
 The brief requires the demo and starts evaluation with it. Use [docs/DEMO_GUIDE.md](docs/DEMO_GUIDE.md), keep the total under 10 minutes, and verify all URLs in incognito mode before submitting the supplied form. Understand the code and assumptions before presenting it.
