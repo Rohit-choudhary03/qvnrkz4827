@@ -1,4 +1,25 @@
-# Public repository and Heroku deployment
+# Vercel deployment and Heroku alternative
+
+## Vercel (selected hosting platform)
+
+The public repository is https://github.com/Rohit-choudhary03/qvnrkz4827.
+
+Import this repository in Vercel and keep **Root Directory** at the repository
+root, not `frontend`. The checked-in `vercel.json` installs and builds React,
+serves `frontend/dist`, and routes `/api/*` to `api/index.py`, which exports the
+existing FastAPI application. The function includes the bundled Elexon snapshot.
+No API keys or environment variables are required for the historical demo.
+
+Alternatively, run `npx vercel --prod` from the repository root after signing in.
+Vercel runs the Python API as a function; Docker remains the local container
+and CI build option.
+
+After deployment, check the home page, `/api/health`, date/cutoff controls,
+monthly accuracy, and CSV export. Ensure production deployment protection
+allows anonymous visitors, verify the URL in incognito mode, and add the live
+URL to the README before submission.
+
+## Heroku alternative
 
 The project is prepared for deployment but has not been published. You need your own GitHub and Heroku accounts. Heroku hosting can incur charges; choose an appropriate plan in your account. No account credentials belong in this repository.
 

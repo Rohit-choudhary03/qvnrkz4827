@@ -173,7 +173,7 @@ Tests cover cutoff inclusivity, prevention of look-ahead, zero versus missing da
 
 Follow [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for a single-app Heroku deployment. This meets the brief's **Vercel or Heroku** requirement without splitting frontend/backend hosting.
 
-- Public anonymous-name GitHub repo: **NOT CREATED — add your URL**
+- Public anonymous-name GitHub repo: https://github.com/Rohit-choudhary03/qvnrkz4827
 - Live Heroku app: **NOT DEPLOYED — add your URL**
 - Unlisted YouTube demo: **NOT RECORDED — add your URL**
 
