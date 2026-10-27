@@ -50,7 +50,7 @@ Install Docker Desktop and start its engine. From the project root:
 docker compose up --build
 ```
 
-Open http://localhost:8000. Stop with `docker compose down` in another terminal. The multi-stage image builds React, copies the historical data, and serves both the API and static frontend from a non-root Python process. No separate database or API host is required. Docker was not available in the generation environment; the image build is included in GitHub Actions for verification on a Docker-enabled runner.
+Open http://localhost:8000. Stop with `docker compose down` in another terminal. The multi-stage image builds React, copies the historical data, and serves both the API and static frontend from a non-root Python process. No separate database or API host is required. A local Docker Desktop build and run on Windows succeeded, and the dashboard loaded with daily and monthly metrics. GitHub Actions also includes a Docker image build.
 
 ## Local development
 
@@ -121,6 +121,8 @@ Source endpoints and contract:
 
 ```text
 windscope/
+  api/index.py              Vercel ASGI entry point for the FastAPI application
+  vercel.json               Vercel build, API routing, and function configuration
   backend/app/analysis.py    Pure normalization, cutoff selection, metrics
   backend/app/main.py        FastAPI routes, CSV export, static frontend hosting
   backend/tests/            Unit and API integration tests
@@ -133,7 +135,7 @@ windscope/
   data/SHA256SUMS            Snapshot checksum
   docs/ANALYSIS.md           Findings from the included snapshot
   docs/DEMO_GUIDE.md         Customer and technical demo outline
-  docs/DEPLOYMENT.md         Public GitHub and Heroku steps
+  docs/DEPLOYMENT.md         Vercel deployment and Heroku alternative
   docs/VALIDATION.md         Checks run and verification limits
   .github/workflows/ci.yml   Tests, frontend build, Docker build
   Dockerfile                Multi-stage production image
@@ -185,4 +187,4 @@ This project was substantially generated with OpenAI ChatGPT/Codex assistance, i
 
 ## Limitations and next steps
 
-This is a focused historical pilot, not production trading software. It does not include demand, prices, other generation, a forecast model, prediction intervals, live ingestion, or procurement recommendations. The hardcoded decision month is intentional. Future work could validate measurement alignment, add calibrated uncertainty using prior-only history, support broader dates and DST, store versioned snapshots, and introduce monitoring. Windows startup and Docker/Heroku execution must still be verified on those environments.
+This is a focused historical pilot, not production trading software. It does not include demand, prices, other generation, a forecast model, prediction intervals, live ingestion, or procurement recommendations. The hardcoded decision month is intentional. Future work could validate measurement alignment, add calibrated uncertainty using prior-only history, support broader dates and DST, store versioned snapshots, and introduce monitoring. Local Docker execution on Windows has been verified; the Windows batch launcher and optional Heroku deployment remain unverified.
