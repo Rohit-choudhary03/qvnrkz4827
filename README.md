@@ -4,7 +4,7 @@ A React + Python dashboard for reviewing Elexon national wind forecasts availabl
 
 **Included:** full source, real Elexon January 2026 snapshot, prebuilt frontend in the download ZIP, Python API, automated tests, Docker configuration, Heroku deployment configuration, and demo guidance. No API key is needed to run the included snapshot.
 
-**Submission status:** the [public repository](https://github.com/Rohit-choudhary03/qvnrkz4827) and [live Vercel app](https://windscope-alpha.vercel.app) are available. The unlisted YouTube demo still needs to be recorded and linked. Verify all submission links in incognito mode before submitting.
+**Submission status:** the [public repository](https://github.com/Rohit-choudhary03/qvnrkz4827), [live Vercel app](https://windscope-alpha.vercel.app/), and [YouTube demo](https://youtu.be/ZKe_Z_r-Jgw) are available. Verify all submission links in incognito mode before submitting.
 
 ## Start on Windows 11
 
@@ -177,7 +177,7 @@ The app is deployed on [Vercel](https://windscope-alpha.vercel.app), serving Rea
 
 - Public anonymous-name GitHub repo: https://github.com/Rohit-choudhary03/qvnrkz4827
 - Live Vercel app: https://windscope-alpha.vercel.app
-- Unlisted YouTube demo: **NOT RECORDED — add your URL**
+- Unlisted YouTube demo: [https://youtu.be/ZKe_Z_r-Jgw](https://youtu.be/ZKe_Z_r-Jgw)
 
 The brief requires the demo and starts evaluation with it. Use [docs/DEMO_GUIDE.md](docs/DEMO_GUIDE.md), keep the total under 10 minutes, and verify all URLs in incognito mode before submitting the supplied form. Understand the code and assumptions before presenting it.
 
